@@ -1,13 +1,13 @@
-.photo-card {
+.business {
     display: flex;
     gap: 30px;
 }
 
-.label-card {
+.business__card {
     position: relative;
 }
 
-.label {
+.business__label {
     position: absolute;
     bottom: 0;
     width: 100%;

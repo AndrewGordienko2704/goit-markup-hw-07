@@ -1,4 +1,4 @@
-.helping-box {
+.benefit__helping-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,7 +7,7 @@
     background-color: var(--team-background-color);
 }
 
-.helping-icon {
+.benefits__helping-icon {
     width: 70px;
     height: 70px;
     fill: var(--primary-text-color);
@@ -37,12 +37,12 @@
 
  
 
-.information {
+.benefits__information {
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.71;
 }
 
-.benefits-part {
+.benefits__part {
     flex-basis: calc((100% - 90px) / 4);
 }

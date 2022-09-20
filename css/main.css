@@ -276,6 +276,12 @@ body {
 .modal-form-check {
   appearance: none;
 }
+
+.modal-form-own-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+}
 .modal-form-check:checked + .modal-form-own-checkbox {
   background-color: var(--accent-color);
   background-image: url("/images/check.svg");
@@ -283,12 +289,6 @@ body {
   border-color: var(--accent-color);
   fill: var(--accent-color);
   border-radius: 2px;
-}
-
-.modal-form-own-checkbox {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
 }
 
 .modal-form-own-checkbox {
@@ -327,22 +327,7 @@ body {
   border-bottom: 1px solid var(--other-color);
 }
 
-.contacts .tel {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  transition: color var(--transition-dur-and-func);
-}
-.contacts .tel:hover, .contacts .tel:focus {
-  color: var(--accent-color);
-}
-
-.contacts-link:hover,
+.contacts__link:hover,
 .contacts-lsnk:focus {
   fill: var(--accent-color);
 }
@@ -375,6 +360,20 @@ body {
   align-items: center;
   column-gap: 50px;
   margin-left: auto;
+}
+.contacts .tel {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-dur-and-func);
+}
+.contacts .tel:hover, .contacts .tel:focus {
+  color: var(--accent-color);
 }
 
 .site-nav {
@@ -434,16 +433,16 @@ body {
   margin: 0 auto;
 }
 
-.photo-card {
+.business {
   display: flex;
   gap: 30px;
 }
 
-.label-card {
+.business__card {
   position: relative;
 }
 
-.label {
+.business__label {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -458,7 +457,7 @@ body {
   align-items: center;
 }
 
-.helping-box {
+.benefit__helping-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,7 +466,7 @@ body {
   background-color: var(--team-background-color);
 }
 
-.helping-icon {
+.benefits__helping-icon {
   width: 70px;
   height: 70px;
   fill: var(--primary-text-color);
@@ -491,13 +490,13 @@ body {
   margin-bottom: 10px;
 }
 
-.information {
+.benefits__information {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.benefits-part {
+.benefits__part {
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -512,7 +511,7 @@ body {
   column-gap: 30px;
 }
 
-.logo-list-link {
+.logo-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -523,18 +522,18 @@ body {
   border-radius: 4px;
   transition: color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
-.logo-list-link:hover, .logo-list-link:focus {
+.logo-list__link:hover, .logo-list__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.logo-list-icon {
+.logo-list__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
   transition: fill var(--transition-dur-and-func);
 }
-.logo-list-icon:hover .logo-list-icon, .logo-list-icon:focus .logo-list-icon {
+.logo-list__icon:hover .logo-list-icon, .logo-list__icon:focus .logo-list-icon {
   fill: var(--accent-color);
 }
 
@@ -548,12 +547,12 @@ body {
   display: flex;
   gap: 30px;
 }
-.team .card {
+.team .team__card {
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team .team-member {
+.team .team__member {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -561,7 +560,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
-.team .position {
+.team .team__position {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -569,18 +568,18 @@ body {
   margin-bottom: 16px;
 }
 
-.information-team {
+.team__information {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.social-list {
+.team__social-list {
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 
-.social-list-link {
+.team__social-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,13 +590,13 @@ body {
   background-color: var(--background-color);
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), filter var(--transition-dur-and-func);
 }
-.social-list-link:hover, .social-list-link:focus {
+.team__social-list-link:hover, .team__social-list-link:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.social-list-icon {
+.team__social-list-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -818,7 +817,7 @@ body {
   border: 1px solid var(--other-color);
 }
 
-.project-card-images {
+.project-cad-images {
   position: relative;
   overflow: hidden;
 }
