@@ -235,9 +235,6 @@ body {
   border-color: var(--accent-color);
   outline: none;
 }
-.modal-form-input:focus + .modal-form-input-icon {
-  fill: var(--accent-color);
-}
 
 .modal-form-input-icon {
   position: absolute;
@@ -249,6 +246,9 @@ body {
   height: 18px;
   fill: currentColor;
   transition: fill var(--transition-dur-and-func);
+}
+.modal-form-input:focus + .modal-form-input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-massage {

@@ -5,32 +5,6 @@
 }
 
 
-
-
-
-
-
-
-.contacts .tel {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    transition: color var(--transition-dur-and-func);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-
-}
-
-
-
 .contacts-link:hover,
 .contacts-lsnk:focus {
     fill: var(--accent-color);
@@ -47,10 +21,6 @@
     width: 12px;
     height: 16px;
 }
-
-
-
-
 
 
 .header-container {
@@ -71,6 +41,24 @@
     align-items: center;
     column-gap: 50px;
     margin-left: auto;
+
+    .tel {
+            color: var(--primary-text-color);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            transition: color var(--transition-dur-and-func);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+    
+        }
 
 }
 

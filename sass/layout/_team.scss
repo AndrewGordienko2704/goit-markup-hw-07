@@ -62,7 +62,7 @@
     transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), filter var(--transition-dur-and-func);
 
     &:hover,
-        &:focus {
+    &:focus {
             background-color: var(--accent-color);
             color: var(--background-color);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

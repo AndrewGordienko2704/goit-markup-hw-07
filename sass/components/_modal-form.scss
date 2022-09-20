@@ -49,9 +49,6 @@
         border-color: var(--accent-color);
         outline: none;
     }
-    &:focus+.modal-form-input-icon {
-       fill: var(--accent-color);
-}
 
 }
 
@@ -65,6 +62,10 @@
     height: 18px;
     fill: currentColor;
     transition: fill var(--transition-dur-and-func);
+
+    .modal-form-input:focus+ & {
+            fill: var(--accent-color);
+        }
 }
 
 .modal-form-massage {
@@ -95,14 +96,7 @@
 .modal-form-check {
     appearance: none;
 
-&:checked+.modal-form-own-checkbox {
-        background-color: var(--accent-color);
-        background-image: url('/images/check.svg');
-        background-size: contain;
-        border-color: var(--accent-color);
-        fill: var(--accent-color);
-        border-radius: 2px;
-    }
+
 }
 
 
@@ -110,6 +104,15 @@
     display: inline-block;
     width: 16px;
     height: 15px;
+
+    .modal-form-check:checked+ & {
+            background-color: var(--accent-color);
+            background-image: url('/images/check.svg');
+            background-size: contain;
+            border-color: var(--accent-color);
+            fill: var(--accent-color);
+            border-radius: 2px;
+        }
 }
 
 
