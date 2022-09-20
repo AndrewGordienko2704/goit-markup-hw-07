@@ -9,7 +9,7 @@
 
 }
 
-.project-card {
+.project-list__card {
     display: block;
     transition: box-shadow var(--transition-dur-and-func);
 
@@ -25,7 +25,7 @@
 }
 
 
-.project .project-title {
+.project .project-list__title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -35,20 +35,20 @@
 
 }
 
-.project .project-group {
+.project .project-list__group {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.875;
 
 }
 
-.project-frame {
+.project-list__frame {
 
     padding: 20px 24px;
     border: 1px solid var(--other-color);
 }
 
-.project-cad-images {
+.project-list__images {
     position: relative;
     overflow: hidden;
 }

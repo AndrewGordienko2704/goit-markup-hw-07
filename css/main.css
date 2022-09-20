@@ -786,18 +786,18 @@ body {
   gap: 30px;
 }
 
-.project-card {
+.project-list__card {
   display: block;
   transition: box-shadow var(--transition-dur-and-func);
 }
-.project-card:hover, .project-card:focus {
+.project-list__card:hover, .project-list__card:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.project-card:hover .overlay, .project-card:focus .overlay {
+.project-list__card:hover .overlay, .project-list__card:focus .overlay {
   transform: translateY(0%);
 }
 
-.project .project-title {
+.project .project-list__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -806,18 +806,18 @@ body {
   margin-bottom: 4px;
 }
 
-.project .project-group {
+.project .project-list__group {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.875;
 }
 
-.project-frame {
+.project-list__frame {
   padding: 20px 24px;
   border: 1px solid var(--other-color);
 }
 
-.project-cad-images {
+.project-list__images {
   position: relative;
   overflow: hidden;
 }
