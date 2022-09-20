@@ -19,20 +19,23 @@
     padding-bottom: 94px;
 }
 
-.benefits {
+.benefits
+ {
     display: flex;
     gap: 30px;
 
+.title 
+    {
+        color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
 }
 
-.benefits .title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
+ 
 
 .information {
     color: var(--primary-text-color);

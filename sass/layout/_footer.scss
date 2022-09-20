@@ -25,12 +25,14 @@
     letter-spacing: 0.02em;
     font-style: normal;
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contacts .adres:hover,
-.contacts .adres:focus {
-    color: var(--accent-color);
-}
+
 
 
 
@@ -41,16 +43,18 @@
 .contacts-footer {
     display: block;
     margin-top: 20px;
+
+.mail-footer {
+        color: var(--reserve-background-color);
+        transition: color var(--transition-dur-and-func);
+    }
 }
 
 .contacts-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.contacts-footer .mail-footer {
-    color: var(--reserve-background-color);
-    transition: color var(--transition-dur-and-func);
-}
+ 
 
 .join-in {
     margin-left: 70px;
@@ -81,12 +85,16 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-dur-and-func);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
 }
 
-.logo-list-link-footer:hover,
-.logo-list-link-footer:focus {
-    background-color: var(--accent-color);
-}
+
 
 .logo-list-icon-footer {
     width: 20px;
@@ -129,12 +137,14 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
+    &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+    
+        }
+
 }
 
-.footer-form-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
 
-}
 
 .footer-form-submit {
     cursor: pointer;

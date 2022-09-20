@@ -44,6 +44,15 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border var(--transition-dur-and-func);
+
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+    &:focus+.modal-form-input-icon {
+       fill: var(--accent-color);
+}
+
 }
 
 .modal-form-input-icon {
@@ -58,16 +67,6 @@
     transition: fill var(--transition-dur-and-func);
 }
 
-.modal-form-input:focus {
-    border-color: var(--accent-color);
-    outline: none;
-}
-
-.modal-form-input:focus+.modal-form-input-icon {
-    fill: var(--accent-color);
-}
-
-
 .modal-form-massage {
     width: 100%;
     height: 120px;
@@ -77,16 +76,16 @@
     resize: none;
     transition: border-color var(--transition-dur-and-func);
 
-}
+    &::placeholder {
+            text-transform: rgba(117, 117, 117, 0.5);
+        }
 
-.modal-form-massage::placeholder {
-    text-transform: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-massage:focus {
+    &:focus {
     outline: none;
     border-color: var(--accent-color);
     transition: border-color var(--transition-dur-and-func);
+}
+
 }
 
 .modal-form-check-field {
@@ -95,6 +94,15 @@
 
 .modal-form-check {
     appearance: none;
+
+&:checked+.modal-form-own-checkbox {
+        background-color: var(--accent-color);
+        background-image: url('/images/check.svg');
+        background-size: contain;
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+        border-radius: 2px;
+    }
 }
 
 
@@ -104,14 +112,7 @@
     height: 15px;
 }
 
-.modal-form-check:checked+.modal-form-own-checkbox {
-    background-color: var(--accent-color);
-    background-image: url('/images/check.svg');
-    background-size: contain;
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-    border-radius: 2px;
-}
+
 
 .modal-form-own-checkbox {
     fill: currentColor;
@@ -140,8 +141,9 @@
     display: inline-block;
     padding: 10px 32px;
     border: none;
+
+    &:focus {
+            color: var(--background-color);
+        }
 }
 
-.modal-form-submit:focus {
-    color: var(--background-color);
-}

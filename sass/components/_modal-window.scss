@@ -34,9 +34,10 @@
     height: 18px;
     fill: var(--title-text-color);
     transition: fill var(--transition-dur-and-func);
+
+    &:focus,
+    &:hover {
+            fill: var(--accent-color);
+        }
 }
 
-.modal-close-icon:focus,
-.modal-close-icon:hover {
-    fill: var(--accent-color);
-}
